@@ -86,7 +86,7 @@ namespace Minesweeper.Core
 
                 result = true;
             }
-            
+
             return result;
         }
 
@@ -118,9 +118,9 @@ namespace Minesweeper.Core
         {
             var result = new List<Field>();
 
-            if(field != null && field.FieldIndicator != FieldIndicator.Bomb)
+            if (field != null && field.FieldIndicator != FieldIndicator.Bomb)
             {
-                if(field.Reveal() || isFirst)
+                if (field.Reveal() || isFirst)
                 {
                     result.Add(field);
 
@@ -143,13 +143,13 @@ namespace Minesweeper.Core
         private bool IsWon()
         {
             // check if any non-revealed field is not a bomb
-            for(int x = 0; x < SizeX; x++)
+            for (int x = 0; x < SizeX; x++)
             {
-                for(int y = 0; y < SizeY; y++)
+                for (int y = 0; y < SizeY; y++)
                 {
                     Field field = _board.GetField(x, y);
 
-                    if(field != null)
+                    if (field != null)
                     {
                         if (!field.IsRevealed && field.FieldIndicator != FieldIndicator.Bomb)
                             return false;

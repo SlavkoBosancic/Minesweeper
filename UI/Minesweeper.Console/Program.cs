@@ -10,6 +10,8 @@ namespace Minesweeper.Console
 {
     class Program
     {
+        // TO DO .... Everything
+
         static void Main(string[] args)
         {
             var x = 10;

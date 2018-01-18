@@ -48,7 +48,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Minesweeper.Core\Minesweeper.Core.csproj">
+    <ProjectReference Include="..\..\Minesweeper.Core\Minesweeper.Core.csproj">
       <Project>{511959f6-1f81-4b49-9602-8613e3b61564}</Project>
       <Name>Minesweeper.Core</Name>
     </ProjectReference>
